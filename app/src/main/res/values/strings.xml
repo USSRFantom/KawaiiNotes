@@ -1,4 +1,21 @@
 <resources>
     <string name="app_name">Kawaii Notes</string>
     <string name="note_priority_picture">Картинка приоритета заметки</string>
+    <string name="day_of_week">День недели:</string>
+    <string name="add_note">Добавить заметку</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="hint_title">Заголовок заметки:</string>
+    <string name="hint_description">Описание заметки</string>
+    
+    <string-array name="daysOfWeek">
+        <item>Понедельник</item>
+        <item>Вторник</item>
+        <item>Среда</item>
+        <item>Четверг</item>
+        <item>Пятница</item>
+        <item>Суббота</item>
+        <item>Воскресенье</item>
+    </string-array>
 </resources>

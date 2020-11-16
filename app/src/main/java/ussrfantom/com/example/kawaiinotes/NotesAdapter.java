@@ -14,9 +14,17 @@ import java.util.ArrayList;
 
 public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHolder>{
         private ArrayList<Note> notes;
+        private OnNoteClickListener onNoteClickListener;
 
     public NotesAdapter(ArrayList<Note> note) {
         this.notes = note;
+    }
+
+    interface OnNoteClickListener {
+        void onNoteClick(int position);
+    }
+    public void setOnNoteClickListener(OnNoteClickListener onNoteClickListener) {
+        this.onNoteClickListener = onNoteClickListener;
     }
 
     @NonNull
@@ -32,16 +40,22 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHol
         notesViewHolder.textViewTitle.setText(note.getTitle());
         notesViewHolder.textViewDescription.setText(note.getDescription());
         notesViewHolder.textViewDayOfWeek.setText(note.getDayOfWeek());
-        notesViewHolder.textViewPriority.setText(String.format("%s", note.getPriority()));
+        int colorId;
         switch (note.getPriority()){
             case (1):
                 notesViewHolder.imageViewNotes.setImageResource(R.drawable.previewdialog);
+                colorId = notesViewHolder.itemView.getResources().getColor(android.R.color.holo_red_light);
+                notesViewHolder.textViewTitle.setBackgroundColor(colorId);
                 break;
             case (2):
                 notesViewHolder.imageViewNotes.setImageResource(R.drawable.previewdialogf);
+                colorId = notesViewHolder.itemView.getResources().getColor(android.R.color.holo_orange_light);
+                notesViewHolder.textViewTitle.setBackgroundColor(colorId);
                 break;
             case (3):
                 notesViewHolder.imageViewNotes.setImageResource(R.drawable.previewdialogt);
+                colorId = notesViewHolder.itemView.getResources().getColor(android.R.color.holo_green_light);
+                notesViewHolder.textViewTitle.setBackgroundColor(colorId);
                 break;
         }
     }
@@ -56,7 +70,6 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHol
         private TextView textViewTitle;
         private TextView textViewDayOfWeek;
         private TextView textViewDescription;
-        private TextView textViewPriority;
         private ImageView imageViewNotes;
 
         public NotesViewHolder(@NonNull View itemView) {
@@ -64,8 +77,15 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NotesViewHol
             textViewTitle = itemView.findViewById(R.id.textViewTitle);
             textViewDayOfWeek = itemView.findViewById(R.id.textViewDayOfWeek);
             textViewDescription = itemView.findViewById(R.id.textViewDescription);
-            textViewPriority = itemView.findViewById(R.id.textViewPriority);
             imageViewNotes = itemView.findViewById(R.id.imageViewNotes);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (onNoteClickListener != null){
+                        onNoteClickListener.onNoteClick(getAdapterPosition());
+                    }
+                }
+            });
         }
     }
 }
