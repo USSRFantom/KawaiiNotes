@@ -8,7 +8,8 @@
     <string name="three">3</string>
     <string name="hint_title">Заголовок заметки:</string>
     <string name="hint_description">Описание заметки</string>
-    
+    <string name="hint_delete_note">Подержите палец 3 секунды чтобы удалить заметку</string>
+
     <string-array name="daysOfWeek">
         <item>Понедельник</item>
         <item>Вторник</item>
