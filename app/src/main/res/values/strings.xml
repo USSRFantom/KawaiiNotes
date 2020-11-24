@@ -9,6 +9,7 @@
     <string name="hint_title">Заголовок заметки:</string>
     <string name="hint_description">Описание заметки</string>
     <string name="hint_delete_note">Подержите палец 3 секунды чтобы удалить заметку</string>
+    <string name="warning_fill_fileds">Все поля должны быть заполнены</string>
 
     <string-array name="daysOfWeek">
         <item>Понедельник</item>
