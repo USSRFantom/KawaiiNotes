@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void remove (int position){
-        Note note = notes.get(position);
+        Note note = adapter.getNotes().get(position);
         viewModel.deleteNote(note);
     }
 
@@ -86,9 +86,7 @@ public class MainActivity extends AppCompatActivity {
         notesFromDB.observe(this, new Observer<List<Note>>() {
             @Override
             public void onChanged(List<Note> notesFromLiveData) {
-                notes.clear();
-                notes.addAll(notesFromLiveData);
-                adapter.notifyDataSetChanged();
+                adapter.setNotes(notesFromLiveData);
             }
         });
     }
