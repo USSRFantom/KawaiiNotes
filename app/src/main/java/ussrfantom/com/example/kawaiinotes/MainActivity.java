@@ -12,16 +12,24 @@ import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.Dialog;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
+import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static ussrfantom.com.example.kawaiinotes.R.string.click_click_exit;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,16 +37,81 @@ public class MainActivity extends AppCompatActivity {
     private final ArrayList<Note> notes = new ArrayList<>(); //массив обьектов, наших заметок
     private NotesAdapter adapter;
     private MainViewModel viewModel;
+    String[] texts;
+    Dialog dialog;
+    private long backPressedTime;
+    private Toast backToast;
+    public static String Monday;
+    public static String Tuesday;
+    public static String Wednesday;
+    public static String Thursday;
+    public static String Friday;
+    public static String Saturday;
+    public static String Sunday;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Monday = getString(R.string.Monday);
+        Tuesday = getString(R.string.Tuesday);
+        Wednesday = getString(R.string.Wednesday);
+        Thursday = getString(R.string.Thursday);
+        Friday = getString(R.string.Friday);
+        Saturday = getString(R.string.Saturday);
+        Sunday = getString(R.string.Sunday);
+
         viewModel = ViewModelProviders.of(this).get(MainViewModel.class);
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null){
             actionBar.hide();
         }
+
+        int random_number = (int) (Math.random() * 5);
+        texts = getResources().getStringArray(R.array.day_info);
+
+
+
+
+        dialog = new Dialog(this);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.previewdialog);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        dialog.setCancelable(false);
+
+        TextView textViewInfo = (TextView) dialog.findViewById(R.id.textViewInfoTrue);
+        textViewInfo.setText(texts[random_number]);
+
+        TextView btnclose = dialog.findViewById(R.id.btnclose);
+        btnclose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    dialog.dismiss();
+                }catch (Exception e){
+
+                }
+            }
+        });
+
+
+        Button buttoncontinue = dialog.findViewById(R.id.buttoncontinue);
+        buttoncontinue.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    dialog.dismiss();
+                }catch (Exception e){
+
+                }
+            }
+        });
+
+
+
+        dialog.show();
+
+
         recyclerViewNotes = findViewById(R.id.recyclerViewNotes);
         adapter = new NotesAdapter(notes);
         recyclerViewNotes.setLayoutManager(new LinearLayoutManager(this));
@@ -89,5 +162,18 @@ public class MainActivity extends AppCompatActivity {
                 adapter.setNotes(notesFromLiveData);
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (backPressedTime + 2000 > System.currentTimeMillis()){
+            backToast.cancel();
+            super.onBackPressed();
+            return;
+        }else{
+            backToast = Toast.makeText(this, click_click_exit, Toast.LENGTH_SHORT);
+            backToast.show();
+        }
+        backPressedTime = System.currentTimeMillis();
     }
 }

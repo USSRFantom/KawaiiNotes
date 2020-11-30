@@ -71,19 +71,19 @@ public class Note {
     public static String getDayAsString(int position){
         switch (position) {
             case 1:
-                return "Понедельник";
+                return MainActivity.Monday;
             case 2:
-                return "Вторник";
+                return MainActivity.Tuesday;
             case 3:
-                return "Среда";
+                return MainActivity.Wednesday;
             case 4:
-                return "Четверг";
+                return MainActivity.Thursday;
             case 5:
-                return "Пятница";
+                return MainActivity.Friday;
             case 6:
-                return "Суббота";
+                return MainActivity.Saturday;
             default:
-                return "Воскресенье";
+                return MainActivity.Sunday;
         }
     }
 

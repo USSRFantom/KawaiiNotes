@@ -1,23 +1,46 @@
 <resources>
     <string name="app_name">Kawaii Notes</string>
-    <string name="note_priority_picture">Картинка приоритета заметки</string>
-    <string name="day_of_week">День недели:</string>
-    <string name="add_note">Добавить заметку</string>
+    <string name="note_priority_picture">Note priority picture</string>
+    <string name="day_of_week">Day of the week:</string>
+    <string name="add_note">Add note</string>
     <string name="one">1</string>
     <string name="two">2</string>
     <string name="three">3</string>
-    <string name="hint_title">Заголовок заметки:</string>
-    <string name="hint_description">Описание заметки</string>
-    <string name="hint_delete_note">Подержите палец 3 секунды чтобы удалить заметку</string>
-    <string name="warning_fill_fileds">Все поля должны быть заполнены</string>
+    <string name="hint_title">Note title:</string>
+    <string name="hint_description">Description of the note</string>
+    <string name="hint_delete_note">Hold your finger for 3 seconds to delete the note</string>
+    <string name="warning_fill_fileds">All fields must be filled</string>
+    <string name="add_note_info">To add a note - just click on the cross in the lower right corner. To remove - just swipe it left or right.</string>
+    <string name="info_day">Helpful information:</string>
+    <string name="text_continue">Proceed</string>
+    <string name="btn_exit">Exit</string>
+    <string name="click_click_exit">Click again to exit</string>
+    <string name="Monday">Monday</string>
+    <string name="Tuesday">Tuesday</string>
+    <string name="Wednesday">Wednesday</string>
+    <string name="Thursday">Thursday</string>
+    <string name="Friday">Friday</string>
+    <string name="Saturday">Saturday</string>
+    <string name="Sunday">Sunday</string>
 
     <string-array name="daysOfWeek">
-        <item>Понедельник</item>
-        <item>Вторник</item>
-        <item>Среда</item>
-        <item>Четверг</item>
-        <item>Пятница</item>
-        <item>Суббота</item>
-        <item>Воскресенье</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
     </string-array>
+
+    <string-array name="day_info">
+        <item>Try to break big tasks into many small ones</item>
+        <item>Do more tasks a day and feel the result in a month</item>
+        <item>Do not put tasks on the back burner!</item>
+        <item>Try to do 5 to 10 tasks daily</item>
+        <item>Even going to the store is already a task! Write it down!</item>
+        <item>On average, people do 5 to 15 tasks a day. And the best do 25</item>
+    </string-array>
+
+
 </resources>

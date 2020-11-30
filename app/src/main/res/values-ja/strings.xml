@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">カワイイノート</string>
+    <string name="note_priority_picture">優先画像に注意してください</string>
+    <string name="day_of_week">曜日：</string>
+    <string name="add_note">メモを追加</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="hint_title">メモのタイトル：</string>
+    <string name="hint_description">メモの説明</string>
+    <string name="hint_delete_note">指を3秒間押し続けて、メモを削除します</string>
+    <string name="warning_fill_fileds">すべてのフィールドに入力する必要があります</string>
+    <string name="add_note_info">メモを追加するには、右下隅の十字をクリックするだけです。 削除するには-左または右にスワイプするだけです。</string>
+    <string name="info_day">役立つ情報：</string>
+    <string name="text_continue">続行します</string>
+    <string name="btn_exit">出口</string>
+    <string name="click_click_exit">もう一度クリックして終了します</string>
+    <string name="Monday">月曜</string>
+    <string name="Tuesday">火曜日</string>
+    <string name="Wednesday">水曜日</string>
+    <string name="Thursday">木曜日</string>
+    <string name="Friday">金曜日</string>
+    <string name="Saturday">土曜日</string>
+    <string name="Sunday">日曜日</string>
+
+    <string-array name="daysOfWeek">
+        <item>月曜</item>
+        <item>火曜日</item>
+        <item>水曜日</item>
+        <item>木曜日</item>
+        <item>金曜日</item>
+        <item>土曜日</item>
+        <item>日曜日</item>
+    </string-array>
+
+    <string-array name="day_info">
+        <item>大きなタスクを多くの小さなタスクに分割してみてください</item>
+        <item>1日に多くのタスクを実行し、1か月で結果を感じます</item>
+        <item>バックバーナーにタスクを置かないでください！</item>
+        <item>毎日5〜10のタスクを実行してみてください</item>
+        <item>店に行くことさえすでに仕事です！ それを書き留め！</item>
+        <item>平均して、人々は1日に5〜15のタスクを実行します。 そして、ベストは25を行います</item>
+    </string-array>
+
+
+</resources>

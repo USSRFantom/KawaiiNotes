@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Аниме блокнот</string>
+    <string name="note_priority_picture">Картинка приоритета заметки</string>
+    <string name="day_of_week">День недели:</string>
+    <string name="add_note">Добавить заметку</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="hint_title">Заголовок заметки:</string>
+    <string name="hint_description">Описание заметки</string>
+    <string name="hint_delete_note">Подержите палец 3 секунды чтобы удалить заметку</string>
+    <string name="warning_fill_fileds">Все поля должны быть заполнены</string>
+    <string name="add_note_info">Чтобы добавить заметку - просто нажмите на крестик в правом нижнем углу. Чтобы удалить - просто смахните ее в лево или в право.</string>
+    <string name="info_day">Полезная информация:</string>
+    <string name="text_continue">Продолжить</string>
+    <string name="btn_exit">Выход</string>
+    <string name="click_click_exit">Нажмите еще раз чтобы выйти</string>
+    <string name="Monday">Понедельник</string>
+    <string name="Tuesday">Вторник</string>
+    <string name="Wednesday">Среда</string>
+    <string name="Thursday">Четвер</string>
+    <string name="Friday">Пятница</string>
+    <string name="Saturday">Суббота</string>
+    <string name="Sunday">Воскресенье</string>
+
+    <string-array name="daysOfWeek">
+        <item>Понедельник</item>
+        <item>Вторник</item>
+        <item>Среда</item>
+        <item>Четверг</item>
+        <item>Пятница</item>
+        <item>Суббота</item>
+        <item>Воскресенье</item>
+    </string-array>
+
+    <string-array name="day_info">
+        <item>Старайтесь разбить большие задачи на множества мелких</item>
+        <item>Делайте больше задач в день и через месяц ощутите результат</item>
+        <item>Не откладывай задачи в долгий ящик!</item>
+        <item>Старайся ежедневно сделать от 5 до 10 задач</item>
+        <item>Даже поход в магазин это уже задача! Запиши!</item>
+        <item>В среднем люди делают от 5 до 15 задач в день. А лучшие делают по 25</item>
+    </string-array>
+
+
+</resources>
