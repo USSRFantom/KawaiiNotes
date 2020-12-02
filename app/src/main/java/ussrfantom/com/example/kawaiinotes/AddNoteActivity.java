@@ -1,19 +1,18 @@
 package ussrfantom.com.example.kawaiinotes;
 
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.ViewModelProviders;
-
-import android.content.ContentValues;
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.ViewModelProviders;
 
 public class AddNoteActivity extends AppCompatActivity {
     private EditText editTextTitle;
@@ -21,6 +20,7 @@ public class AddNoteActivity extends AppCompatActivity {
     private Spinner spinnerDaysOfWeek;
     private RadioGroup radioGroupPriority;
     private  MainViewModel viewModel;
+    Button button1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +35,8 @@ public class AddNoteActivity extends AppCompatActivity {
         editTextDescription = findViewById(R.id.editTextDescription);
         spinnerDaysOfWeek = findViewById(R.id.spinnerDaysOfWeek);
         radioGroupPriority = findViewById(R.id.radioGroupPriority);
+
+
     }
 
     public void onClickSaveNote(View view) {

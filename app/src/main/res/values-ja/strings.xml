@@ -10,7 +10,7 @@
     <string name="hint_description">メモの説明</string>
     <string name="hint_delete_note">指を3秒間押し続けて、メモを削除します</string>
     <string name="warning_fill_fileds">すべてのフィールドに入力する必要があります</string>
-    <string name="add_note_info">メモを追加するには、右下隅の十字をクリックするだけです。 削除するには-左または右にスワイプするだけです。</string>
+    <string name="add_note_info">メモを追加するには、右下隅の十字をクリックするだけです。 削除するには-左または右にスワイプするだけです。 そしてリマインダーを設定するための時計。</string>
     <string name="info_day">役立つ情報：</string>
     <string name="text_continue">続行します</string>
     <string name="btn_exit">出口</string>
@@ -22,6 +22,14 @@
     <string name="Friday">金曜日</string>
     <string name="Saturday">土曜日</string>
     <string name="Sunday">日曜日</string>
+    <string name="no_alarm_set">アラームが設定されていません</string>
+    <string name="open_time_picker">時間を設定する</string>
+    <string name="cancel_alarm">通知をキャンセルする</string>
+    <string name="notification_canceled">通知がキャンセルされました</string>
+    <string name="alert_time">\"アラート時間:\"</string>
+    <string name="alarm">先輩注目！</string>
+    <string name="alarm_manager">私たちのアプリケーションであなたのビジネスを忘れないでください！</string>
+    <string name="back">バック</string>
 
     <string-array name="daysOfWeek">
         <item>月曜</item>

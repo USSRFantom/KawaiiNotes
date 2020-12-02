@@ -10,7 +10,7 @@
     <string name="hint_description">Description of the note</string>
     <string name="hint_delete_note">Hold your finger for 3 seconds to delete the note</string>
     <string name="warning_fill_fileds">All fields must be filled</string>
-    <string name="add_note_info">To add a note - just click on the cross in the lower right corner. To remove - just swipe it left or right.</string>
+    <string name="add_note_info">To add a note - just click on the cross in the lower right corner. To delete - just swipe it left or right. And a clock to set a reminder.</string>
     <string name="info_day">Helpful information:</string>
     <string name="text_continue">Proceed</string>
     <string name="btn_exit">Exit</string>
@@ -22,6 +22,14 @@
     <string name="Friday">Friday</string>
     <string name="Saturday">Saturday</string>
     <string name="Sunday">Sunday</string>
+    <string name="no_alarm_set">No Alarm set</string>
+    <string name="open_time_picker">open time picker</string>
+    <string name="cancel_alarm">cancel alarm</string>
+    <string name="notification_canceled">notification canceled</string>
+    <string name="alert_time">\"alert time:\"</string>
+    <string name="alarm">Senpai attention!</string>
+    <string name="alarm_manager">Do not forget about your business in our application!</string>
+    <string name="back">Back</string>
 
     <string-array name="daysOfWeek">
         <item>Monday</item>

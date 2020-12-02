@@ -10,7 +10,7 @@
     <string name="hint_description">Описание заметки</string>
     <string name="hint_delete_note">Подержите палец 3 секунды чтобы удалить заметку</string>
     <string name="warning_fill_fileds">Все поля должны быть заполнены</string>
-    <string name="add_note_info">Чтобы добавить заметку - просто нажмите на крестик в правом нижнем углу. Чтобы удалить - просто смахните ее в лево или в право.</string>
+    <string name="add_note_info">Чтобы добавить заметку - просто нажмите на крестик в правом нижнем углу. Чтобы удалить - просто смахните ее в лево или в право. И часики для установки напоминания.</string>
     <string name="info_day">Полезная информация:</string>
     <string name="text_continue">Продолжить</string>
     <string name="btn_exit">Выход</string>
@@ -22,6 +22,15 @@
     <string name="Friday">Пятница</string>
     <string name="Saturday">Суббота</string>
     <string name="Sunday">Воскресенье</string>
+    <string name="no_alarm_set">Оповещение не установлено</string>
+    <string name="open_time_picker">Установить время</string>
+    <string name="cancel_alarm">Отменить оповещение</string>
+    <string name="notification_canceled">оповещение отменено</string>
+    <string name="alert_time">\"время оповещения:\"</string>
+    <string name="alarm">Семпай внимание!</string>
+    <string name="alarm_manager">Не забывай про свои дела в нашем приложении!</string>
+    <string name="back">Назад</string>
+
 
     <string-array name="daysOfWeek">
         <item>Понедельник</item>

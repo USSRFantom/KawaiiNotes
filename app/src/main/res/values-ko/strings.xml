@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">애니메이션 메모장</string>
+    <string name="note_priority_picture">Картинка приоритета заметки</string>
+    <string name="day_of_week">요일:</string>
+    <string name="add_note">메모를 추가</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="hint_title">참고 제목 :</string>
+    <string name="hint_description">메모에 대한 설명</string>
+    <string name="hint_delete_note">메모를 삭제하려면 손가락을 3 초 동안 누릅니다.</string>
+    <string name="warning_fill_fileds">모든 필드를 채워야합니다.</string>
+    <string name="add_note_info">메모를 추가하려면 오른쪽 하단에있는 십자가를 클릭하십시오. 삭제하려면 왼쪽이나 오른쪽으로 스 와이프하세요. 그리고 미리 알림을 설정하는 시계.</string>
+    <string name="info_day">유용한 정보 :</string>
+    <string name="text_continue">발하다</string>
+    <string name="btn_exit">출구</string>
+    <string name="click_click_exit">종료하려면 다시 클릭하십시오.</string>
+    <string name="Monday">월요일</string>
+    <string name="Tuesday">화요일</string>
+    <string name="Wednesday">수요일</string>
+    <string name="Thursday">네</string>
+    <string name="Friday">금요일</string>
+    <string name="Saturday">토요일</string>
+    <string name="Sunday">일요일</string>
+    <string name="no_alarm_set">설정된 경고 없음</string>
+    <string name="open_time_picker">시간 설정</string>
+    <string name="cancel_alarm">알림 취소</string>
+    <string name="notification_canceled">알림이 취소되었습니다.</string>
+    <string name="alert_time">\"알림 시간:\"</string>
+    <string name="alarm">Senpai 주목!</string>
+    <string name="alarm_manager">Не забывай про свои дела в нашем приложении!</string>
+    <string name="back">우리의 응용 프로그램에서 귀하의 비즈니스를 잊지 마십시오!</string>
+
+
+    <string-array name="daysOfWeek">
+        <item>월요일</item>
+        <item>화요일</item>
+        <item>수요일</item>
+        <item>네</item>
+        <item>금요일</item>
+        <item>토요일</item>
+        <item>일요일</item>
+    </string-array>
+
+    <string-array name="day_info">
+        <item>큰 작업을 여러 작은 작업으로 나누십시오.</item>
+        <item>하루에 더 많은 작업을 수행하고 한 달 안에 결과를 느껴보세요</item>
+        <item>백 버너에 작업을 두지 마십시오!</item>
+        <item>매일 5 ~ 10 개의 작업을 수행하십시오.</item>
+        <item>가게에가는 것도 벌써 과제! 받아 적어!</item>
+        <item>평균적으로 사람들은 하루에 5 ~ 15 개의 작업을 수행합니다. 그리고 최선은 25</item>
+    </string-array>
+
+
+</resources>
